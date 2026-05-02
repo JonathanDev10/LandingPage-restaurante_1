@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tempero & Brasa — Cozinha com Alma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Raleway:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../LandingPage_restaurante/css/index.css">
+
+</head>
+<body>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/5585999999999?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Tempero%20%26%20Brasa" target="_blank" rel="noopener" class="whatsapp-float" title="Reserve pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.845L.057 23.5l5.793-1.519A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.854 0-3.594-.505-5.09-1.381l-.366-.218-3.437.901.919-3.354-.238-.386A9.963 9.963 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+  </svg>
+</a>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
+  <a href="#historia" onclick="closeMobileMenu()">Nossa História</a>
+  <a href="#delicias" onclick="closeMobileMenu()">Delícias da Casa</a>
+  <a href="#cardapio" onclick="closeMobileMenu()">Cardápio</a>
+  <a href="#depoimentos" onclick="closeMobileMenu()">Depoimentos</a>
+  <a href="#localizacao" onclick="closeMobileMenu()">Localização</a>
+  <a href="https://wa.me/5585999999999" target="_blank" style="color: #25D366; font-size: 1.3rem; margin-top: 8px;">📲 Fazer Reserva</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="logo">Tempero <span>&</span> Brasa</a>
+  <ul class="nav-links">
+    <li><a href="#historia">Nossa História</a></li>
+    <li><a href="#delicias">Delícias</a></li>
+    <li><a href="#cardapio">Cardápio</a></li>
+    <li><a href="#depoimentos">Depoimentos</a></li>
+    <li><a href="#localizacao">Localização</a></li>
+    <li><a href="https://wa.me/5585999999999?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Tempero%20%26%20Brasa" target="_blank" class="nav-reserva">Reservar Mesa</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="openMobileMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-pretitulo">Bem-vindo ao</p>
+    <h1 class="hero-titulo">Cozinha que <em>aquece</em><br>a alma.</h1>
+    <p class="hero-subtitulo">Ingredientes frescos, brasa na medida certa e aquele tempero que só a gente sabe fazer. Uma experiência que vai muito além de comer bem.</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/5585999999999?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Tempero%20%26%20Brasa" target="_blank" class="btn-primary">📲 Reservar Mesa</a>
+      <a href="#cardapio" class="btn-outline">Ver Cardápio</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Explore</span>
+  </div>
+</section>
+
+<!-- ─── HISTORIA ─── -->
+<section id="historia">
+  <div class="container">
+    <div class="historia-grid">
+      <div class="historia-img-wrap reveal">
+        <img
+          src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=85"
+          alt="Interior acolhedor do Tempero & Brasa"
+          class="historia-img"
+        />
+        <div class="historia-img-badge">
+          <span class="ano">2008</span>
+          <span class="desde">Desde</span>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <span class="secao-pretitulo">Nossa história</span>
+        <h2 class="secao-titulo">Nascemos da <em>paixão</em> pela boa mesa.</h2>
+        <div class="secao-linha"></div>
+        <p class="secao-texto">Tudo começou com uma fogueira, uma família e a crença de que comida boa une pessoas. Há mais de 16 anos, o Tempero & Brasa carrega essa essência: o aconchego de um jantar em casa, mas com o capricho de quem fez da gastronomia uma arte.</p>
+        <p class="secao-texto" style="margin-top: 16px;">Nosso ambiente de madeira, ferro e plantas não é cenário — é quem somos. Cada prato que sai da cozinha tem história, técnica e muito afeto.</p>
+        <div class="historia-destaques">
+          <div class="destaque-item">
+            <span class="destaque-num">16+</span>
+            <span class="destaque-label">Anos de tradição</span>
+          </div>
+          <div class="destaque-item">
+            <span class="destaque-num">48k</span>
+            <span class="destaque-label">Clientes felizes</span>
+          </div>
+          <div class="destaque-item">
+            <span class="destaque-num">98%</span>
+            <span class="destaque-label">Recomendam</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── DELICIAS DA CASA ─── -->
+<section id="delicias">
+  <div class="container">
+    <div class="delicias-header reveal">
+      <span class="secao-pretitulo">Orgulho da nossa cozinha</span>
+      <h2 class="secao-titulo">Delícias da <em>Casa</em></h2>
+      <div class="secao-linha"></div>
+      <p class="secao-texto" style="margin: 0 auto;">Pratos criados com dedicação, ingredientes selecionados e aquele toque especial que só o Tempero & Brasa tem.</p>
+    </div>
+    <div class="delicias-grid">
+      <div class="delicia-card reveal">
+        <div class="delicia-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=85" alt="Costela na Brasa" class="delicia-img"/>
+        </div>
+        <div class="delicia-body">
+          <span class="delicia-tag">⭐ Carro-Chefe</span>
+          <div class="delicia-nome">Costela na Brasa 12h</div>
+          <p class="delicia-desc">Cozida lentamente até desmanchar no garfo. Marinada em ervas frescas, alho e nosso molho secreto de três gerações.</p>
+          <span class="delicia-preco">R$ 89,90</span>
+        </div>
+      </div>
+      <div class="delicia-card reveal reveal-delay-1">
+        <div class="delicia-img-wrap">
+          <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=85" alt="Risoto Trufado" class="delicia-img"/>
+        </div>
+        <div class="delicia-body">
+          <span class="delicia-tag">🏆 Premiado</span>
+          <div class="delicia-nome">Risoto de Cogumelos com Trufa</div>
+          <p class="delicia-desc">Arroz arbóreo ao ponto certo, mix de cogumelos porcini e shiitake, finalizado com óleo de trufa italiana e parmesão.</p>
+          <span class="delicia-preco">R$ 72,00</span>
+        </div>
+      </div>
+      <div class="delicia-card reveal reveal-delay-2">
+        <div class="delicia-img-wrap">
+          <img src="https://www.vovopalmirinha.com.br/wp-content/uploads/2016/06/pudim-1.jpg" alt="Pudim Artesanal" class="delicia-img"/>
+        </div>
+        <div class="delicia-body">
+          <span class="delicia-tag">🍮 Favorito</span>
+          <div class="delicia-nome">Pudim Artesanal da Casa</div>
+          <p class="delicia-desc">Receita de família, com leite condensado feito no restaurante, caramelo dourado e textura que derrete na boca.</p>
+          <span class="delicia-preco">R$ 24,00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MAIS PEDIDOS ─── -->
+<section id="maispedidos">
+  <div class="container">
+    <span class="secao-pretitulo reveal">O que a galera ama</span>
+    <h2 class="secao-titulo reveal" style="color: #fff;">Mais <em style="color: var(--ouro);">Pedidos</em></h2>
+    <div class="secao-linha reveal"></div>
+    <div class="maispedidos-grid">
+      <div class="pedido-card reveal">
+        <span class="pedido-emoji">🥩</span>
+        <span class="pedido-num">#01 mais pedido</span>
+        <div class="pedido-nome">Picanha na Brasa</div>
+        <p class="pedido-desc">Ponto perfeito, sal grosso artesanal e manteiga de garrafa.</p>
+        <span class="pedido-badge">🔥 Clássico</span>
+      </div>
+      <div class="pedido-card reveal reveal-delay-1">
+        <span class="pedido-emoji">🍤</span>
+        <span class="pedido-num">#02 mais pedido</span>
+        <div class="pedido-nome">Camarão na Moranga</div>
+        <p class="pedido-desc">Camarão-rosa salteado em manteiga e creme, servido dentro da abóbora assada.</p>
+        <span class="pedido-badge">⭐ Premium</span>
+      </div>
+      <div class="pedido-card reveal reveal-delay-2">
+        <span class="pedido-emoji">🍝</span>
+        <span class="pedido-num">#03 mais pedido</span>
+        <div class="pedido-nome">Nhoque Gratinado</div>
+        <p class="pedido-desc">Massa artesanal, molho bolonhesa lento de 4h e queijo gratinado na hora.</p>
+        <span class="pedido-badge">🏠 Da Casa</span>
+      </div>
+      <div class="pedido-card reveal reveal-delay-3">
+        <span class="pedido-emoji">🍰</span>
+        <span class="pedido-num">#04 mais pedido</span>
+        <div class="pedido-nome">Petit Gâteau</div>
+        <p class="pedido-desc">Casquinha crocante, interior de chocolate 70% derretendo, sorvete de creme.</p>
+        <span class="pedido-badge">😍 Irresistível</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CARDÁPIO ─── -->
+<section id="cardapio">
+  <div class="container">
+    <div class="cardapio-header reveal">
+      <span class="secao-pretitulo">O que preparamos para você</span>
+      <h2 class="secao-titulo">Nosso <em>Cardápio</em></h2>
+      <div class="secao-linha"></div>
+    </div>
+    <div class="cardapio-tabs reveal">
+      <button class="tab-btn active" onclick="showTab('entradas')">Entradas</button>
+      <button class="tab-btn" onclick="showTab('principais')">Pratos Principais</button>
+      <button class="tab-btn" onclick="showTab('bebidas')">Bebidas</button>
+      <button class="tab-btn" onclick="showTab('sobremesas')">Sobremesas</button>
+    </div>
+
+    <div class="cardapio-lista active" id="tab-entradas">
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Caldo de Mocotó</div><div class="cardapio-desc-item">Caldo tradicional com temperos da casa e farofa crocante</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 28,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Croqueta de Queijo Coalho</div><div class="cardapio-desc-item">Panado artesanal, interior cremoso, com geleia de pimenta</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 32,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Tábua de Frios Gourmet</div><div class="cardapio-desc-item">Queijos artesanais, embutidos, pães e conservas selecionadas</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 65,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Bolinho de Bacalhau</div><div class="cardapio-desc-item">Receita portuguesa tradicional, crocante por fora e cremoso por dentro</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 36,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Salada Caesar do Chef</div><div class="cardapio-desc-item">Alface romana, croutons artesanais, parmesão lascado e molho caseiro</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 29,00</div></div>
+    </div>
+
+    <div class="cardapio-lista" id="tab-principais">
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Costela na Brasa 12h</div><div class="cardapio-desc-item">Com farofa de manteiga, arroz branco e vinagrete especial</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 89,90</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Picanha com Acompanhamentos</div><div class="cardapio-desc-item">400g de picanha grelhada, arroz, feijão tropeiro e batata rústica</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 98,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Camarão na Moranga</div><div class="cardapio-desc-item">Camarão rosa, creme de leite fresco, abóbora assada e arroz branco</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 112,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Risoto de Cogumelos com Trufa</div><div class="cardapio-desc-item">Arbóreo, mix de cogumelos, óleo de trufa e parmesão</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 72,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Frango ao Molho Pardo</div><div class="cardapio-desc-item">Receita mineira da vovó, com arroz de forno e quiabo refogado</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 58,00</div></div>
+    </div>
+
+    <div class="cardapio-lista" id="tab-bebidas">
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Caipirinha da Casa</div><div class="cardapio-desc-item">Cachaça artesanal, limão tahiti, açúcar demerara</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 22,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Suco de Fruta Natural</div><div class="cardapio-desc-item">Manga, maracujá, goiaba, acerola — 400ml sem adição de açúcar</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 14,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Vinhos Selecionados</div><div class="cardapio-desc-item">Rótulos importados e nacionais — taça a partir de</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 28,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Cerveja Artesanal</div><div class="cardapio-desc-item">IPA, Stout, Weiss e Pilsen — parceria com cervejaria local</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 18,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Água com Gás</div><div class="cardapio-desc-item">Garrafa 500ml importada ou nacional</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 9,00</div></div>
+    </div>
+
+    <div class="cardapio-lista" id="tab-sobremesas">
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Pudim Artesanal da Casa</div><div class="cardapio-desc-item">Receita de família com caramelo dourado e textura inigualável</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 24,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Petit Gâteau de Chocolate</div><div class="cardapio-desc-item">Chocolate 70%, sorvete de creme artesanal e calda de frutas vermelhas</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 32,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Romeu e Julieta Premium</div><div class="cardapio-desc-item">Queijo minas artesanal e goiabada cascão com mel de abelha</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 19,00</div></div>
+      <div class="cardapio-item"><div class="cardapio-info"><div class="cardapio-nome">Mousse de Maracujá</div><div class="cardapio-desc-item">Textura leve e aerada, calda de maracujá fresco e raspas de limão</div></div><div class="cardapio-pontilhado"></div><div class="cardapio-preco">R$ 21,00</div></div>
+    </div>
+
+    <div class="cardapio-cta reveal">
+      <a href="https://wa.me/5585999999999?text=Olá!%20Gostaria%20de%20ver%20o%20cardápio%20completo" target="_blank" class="btn-primary">Ver cardápio completo pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA PROMO ─── -->
+<section id="cta-promo">
+  <div class="cta-bg"></div>
+  <div class="cta-content reveal">
+    <span class="cta-badge">✨ Experiência Gastronômica</span>
+    <h2 class="cta-titulo">Cada jantar é uma <em>memória</em> que dura para sempre.</h2>
+    <p class="cta-texto">Casal? Família? Aniversário? Confraternização? Transformamos qualquer ocasião em algo inesquecível. Reserve com antecedência e garanta seu espaço — as mesas voam.</p>
+    <div class="cta-promos">
+      <div class="promo-chip"><span class="chip-icon">🕐</span> Happy Hour de Seg a Sex, 18h às 20h</div>
+      <div class="promo-chip"><span class="chip-icon">🎂</span> Aniversariante ganha sobremesa grátis</div>
+      <div class="promo-chip"><span class="chip-icon">🍷</span> Wine Night às quintas — 2 por 1 nos vinhos</div>
+    </div>
+    <a href="https://wa.me/5585999999999?text=Olá!%20Quero%20aproveitar%20a%20promoção%20do%20Tempero%20%26%20Brasa" target="_blank" class="btn-primary" style="font-size: 0.9rem; padding: 18px 44px;">
+      📲 Quero Aproveitar Agora
+    </a>
+  </div>
+</section>
+
+<!-- ─── DEPOIMENTOS ─── -->
+<section id="depoimentos">
+  <div class="container">
+    <div class="depo-header reveal">
+      <span class="secao-pretitulo">Quem viveu, conta</span>
+      <h2 class="secao-titulo">O que nossos <em>clientes</em> dizem</h2>
+      <div class="secao-linha"></div>
+    </div>
+    <div class="depo-grid">
+      <div class="depo-card reveal">
+        <div class="depo-aspas">"</div>
+        <p class="depo-texto">A costela na brasa é simplesmente perfeita. Vim no aniversário da minha esposa e saímos apaixonados. O ambiente é lindo, a comida é extraordinária e o atendimento impecável. Já virei cliente fixo!</p>
+        <div class="depo-autor">
+          <div class="depo-avatar">MR</div>
+          <div>
+            <div class="depo-estrelas">
+              <span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span>
+            </div>
+            <div class="depo-nome">Marcos Rodrigues</div>
+            <div class="depo-sub">Google Reviews · há 2 semanas</div>
+          </div>
+        </div>
+      </div>
+      <div class="depo-card reveal reveal-delay-1">
+        <div class="depo-aspas">"</div>
+        <p class="depo-texto">Fui com minha família inteira para o almoço de domingo e foi incrível. O espaço acomoda bem, a comida chegou rapidinho e cada prato foi uma surpresa positiva. O risoto de trufas... meu Deus.</p>
+        <div class="depo-autor">
+          <div class="depo-avatar">AP</div>
+          <div>
+            <div class="depo-estrelas">
+              <span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span>
+            </div>
+            <div class="depo-nome">Ana Paula Ferreira</div>
+            <div class="depo-sub">TripAdvisor · há 1 mês</div>
+          </div>
+        </div>
+      </div>
+      <div class="depo-card reveal reveal-delay-2">
+        <div class="depo-aspas">"</div>
+        <p class="depo-texto">Tempero & Brasa virou o ponto de encontro da nossa firma. Fizemos dois eventos corporativos lá e cada um foi impecável. Profissionalismo, sabor e aquela atmosfera acolhedora que todo mundo ama.</p>
+        <div class="depo-autor">
+          <div class="depo-avatar">JL</div>
+          <div>
+            <div class="depo-estrelas">
+              <span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span><span class="estrela">★</span>
+            </div>
+            <div class="depo-nome">Jorge Lima</div>
+            <div class="depo-sub">Instagram · @jorgelimaoficial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── LOCALIZACAO ─── -->
+<section id="localizacao">
+  <div class="container">
+    <span class="secao-pretitulo reveal">Venha nos visitar</span>
+    <h2 class="secao-titulo reveal">Onde <em style="color: var(--ouro);">estamos</em></h2>
+    <div class="secao-linha reveal"></div>
+    <div class="loc-grid">
+      <div>
+        <div class="loc-info-item reveal">
+          <div class="loc-icon">📍</div>
+          <div class="loc-info-text">
+            <strong>Endereço</strong>
+            <p>Rua das Acácias, 248 — Bairro Jardim das Flores<br>Fortaleza, CE — 60000-000</p>
+          </div>
+        </div>
+        <div class="loc-info-item reveal reveal-delay-1">
+          <div class="loc-icon">🕐</div>
+          <div class="loc-info-text">
+            <strong>Horário de Funcionamento</strong>
+            <p>Terça a Sexta: 12h às 15h e 19h às 23h<br>Sábado e Domingo: 12h às 23h<br>Segunda-feira: Fechado</p>
+          </div>
+        </div>
+        <div class="loc-info-item reveal reveal-delay-2">
+          <div class="loc-icon">📞</div>
+          <div class="loc-info-text">
+            <strong>Telefone & WhatsApp</strong>
+            <p>(85) 99999-9999<br>Atendimento de seg a dom, 10h às 22h</p>
+          </div>
+        </div>
+        <div class="loc-info-item reveal reveal-delay-3">
+          <div class="loc-icon">📧</div>
+          <div class="loc-info-text">
+            <strong>E-mail</strong>
+            <p>contato@temperobrasa.com.br<br>Respondemos em até 2 horas úteis</p>
+          </div>
+        </div>
+        <div style="margin-top: 8px;" class="reveal">
+          <a href="https://wa.me/5585999999999?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Tempero%20%26%20Brasa" target="_blank" class="btn-primary">📲 Falar pelo WhatsApp</a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="loc-mapa-placeholder">
+          <span class="map-icon">🗺️</span>
+          <span>Rua das Acácias, 248</span>
+          <span style="font-size: 0.72rem; margin-top: 4px; color: rgba(255,255,255,0.35);">Fortaleza · CE</span>
+          <a href="https://maps.google.com" target="_blank" style="margin-top: 16px; background: var(--vermelho); color: #fff; padding: 10px 24px; border-radius: 2px; text-decoration: none; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">Abrir no Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── RODAPE ─── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#hero" class="footer-logo">Tempero <span>&</span> Brasa</a>
+        <p class="footer-desc">Há mais de 16 anos transformando ingredientes frescos e brasa no ponto certo em memórias afetivas. Nossa cozinha tem alma — e ela vai te conquistar.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" title="Instagram" aria-label="Instagram">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="Facebook" aria-label="Facebook">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="WhatsApp" aria-label="WhatsApp">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.845L.057 23.5l5.793-1.519A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.854 0-3.594-.505-5.09-1.381l-.366-.218-3.437.901.919-3.354-.238-.386A9.963 9.963 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="#historia">Nossa História</a></li>
+          <li><a href="#delicias">Delícias da Casa</a></li>
+          <li><a href="#maispedidos">Mais Pedidos</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul class="footer-links">
+          <li><a href="#">Reservas</a></li>
+          <li><a href="#">Eventos Corporativos</a></li>
+          <li><a href="#">Aniversários & Festas</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer-links">
+          <li><a href="tel:5585999999999">(85) 99999-9999</a></li>
+          <li><a href="mailto:contato@temperobrasa.com.br">contato@temperobrasa.com.br</a></li>
+          <li><a href="#">Rua das Acácias, 248</a></li>
+          <li><a href="#">Fortaleza – CE</a></li>
+          <li><a href="https://wa.me/5585999999999" target="_blank">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Tempero & Brasa. Todos os direitos reservados.</span>
+      <div style="display: flex; gap: 24px;">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../LandingPage_restaurante/js/index.js"></script>
+</body>
+</html>
